@@ -9,6 +9,7 @@ __author__ = "Christoph Schmal"
 __license__ = "GPL"
 __maintainer__ = "Christoph Schmal"
 __email__ = "christoph.schmal@hu-berlin.de"
+__repository__ = "https://github.com/cschmal/TNBC_ToD"
 
 
 # plotting libraries
