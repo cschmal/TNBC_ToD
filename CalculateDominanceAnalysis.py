@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 
 """
-Calculate correlations between circadian or growth or drug sensitivity parameters and
-drug dependent time-of-day responses together with p-values
-as depicted in Fig. 5d-f of the manuscript
+Apply dominance analysis to obtain data
+underlying Fig. 5i-j of the manuscript
 """
 
 __author__ = "Christoph Schmal"
@@ -32,8 +31,6 @@ c_annot_size = 7
 file2load = 'ToD_Data.xlsx'
 
 with open('PickledData'+file2load.split('.')[0]+'.pickle', 'rb') as f:
-    # The protocol version used is detected automatically, so we do not
-    # have to specify it.
     data = pickle.load(f)
 
 Circadian_Clock, Growth_Properties, Drug_Sensitivity, Time_of_Day_Sensitivity = data
